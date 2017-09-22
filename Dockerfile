@@ -12,6 +12,6 @@ COPY containerfs /
 
 VOLUME ["/csgo"]
 
-WORKDIR /csgo
+WORKDIR /
 
 CMD ["./start.sh"]
