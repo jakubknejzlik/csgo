@@ -4,7 +4,7 @@ ENV LAST_UPDATED_AT 2017-09-19
 
 RUN apt-get update \
     # install dependencies
-    && apt-get install -y lib32gcc1 curl \
+    && apt-get install -y lib32gcc1 curl lib32stdc++6 \
     # delete apt cache to save space
     && rm -rf /var/lib/apt/lists/* \
     && mkdir /steamcmd && cd /steamcmd \
