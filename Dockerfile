@@ -14,7 +14,7 @@ RUN apt-get update \
 # ADD steamcmd_linux.tar.gz /steamcmd
 
 # install CSGO
-RUN cd /steamcmd && ./steamcmd.sh +login anonymous +force_install_dir /csgo +app_update 740 validate +quit
+RUN cd /steamcmd && ./steamcmd.sh +login anonymous +force_install_dir /csgo +app_update 740 validate +app_update 740 +quit
 
 COPY containerfs /
 
